@@ -12,3 +12,5 @@ $previousSchool = $_POST['previous_school'];
 $username = $_POST['username'];
 $password = $_POST['password'];
 $emergencyContactName = $_POST['emergency_contact'];
+
+//eeeeh kwan hii ni kitu ghn 🤔🤔🤔😐😐😐 

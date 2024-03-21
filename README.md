@@ -17,4 +17,5 @@ Some key features of the system include:
 - Calendar/scheduling
 - Notifications and messaging
 
+## We need offline boostrap packages
 The system utilizes modern web development technologies and Git for version control and collaboration between students.
