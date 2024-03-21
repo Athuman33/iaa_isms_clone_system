@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IAA Arusha - Registration Form</title>
+</head>
+<body>
+  <center><h1>Institute of Accountancy Arusha</h1>
+  <h3>IAA</h3></center>
+  <form action="registration_handler.php" method="post" enctype="multipart/form-data">  <h2>Personal Information</h2>
+    <label for="first_name">First Name:</label>
+    <input type="text" name="first_name" id="first_name" required>
+    <br>
+
+    <label for="last_name">Last Name:</label>
+    <input type="text" name="last_name" id="last_name" required>
+    <br>
+
+    <label for="date_of_birth">Date of Birth:</label>
+    <input type="date" name="date_of_birth" id="date_of_birth" required>
+    <br>
+
+    <label for="nationality">Nationality:</label>
+    <input type="text" name="nationality" id="nationality" required>
+    <br>
+
+    <label for="email">Email address:</label>
+    <input type="email" name="email" id="email" required>
+    <br>
+
+    <label for="phone_number">Phone number:</label>
+    <input type="tel" name="phone_number" id="phone_number" required>
+    <br>
+
+    <h2>Academic Information</h2>
+    <label for="program">Program of Study:</label>
+    <select name="program" id="program" required>
+      <option value="">Select Program</option>
+      <option value="bachelor_business">Bachelor of Business Administration</option>
+      <option value="bachelor_computer_science">Bachelor of computer science</option>
+      <option value="bachelor_accountancy">Bachelor of Accountancy</option>
+      <option value="bachelor_BAA">Bachelor of accountancy and auditing</option>
+      <option value="bachelor_it">Bachelor of account and information technology</option>
+      <option value="BBM">Bachelor of Business management</option>
+      <option value="others">others</option>
+      <option value="BCSe">Bachelor of Cyber security</option>
+      <option value="bachelor_it">Bachelor of Information Technology</option>
+      </select>
+    <br>
+
+    <label for="previous_school">Previous School Name:</label>
+    <input type="text" name="previous_school" id="previous_school" required>
+    <br>
+
+    <label for="transcript">Upload Transcript (PDF only):</label>
+    <input type="file" name="transcript" id="transcript" accept=".pdf" required>
+    <br>
+
+    <h2>Login Information</h2>
+    <label for="username">Username:</label>
+    <input type="text" name="username" id="username" required>
+    <br>
+
+    <label for="password">Password:</label>
+    <input type="password" name="password" id="password" required>
+    <br>
+
+    <h2>Optional Information</h2>
+    <label for="emergency_contact_name">Emergency Contact Name:</label>
+    <input type="text" name="emergency_contact_name" id="emergency_contact_name">
+    <br>
+
+    <label for="emergency_contact_phone">Emergency Contact Phone:</label>
+    <input type="tel" name="emergency_contact_phone" id="emergency_contact_phone">
+    <br>
+
+    <label for="language">Language of Instruction:</label>
+    <select name="language" id="language">
+      <option value="english">English</option>
+      <option value="kiswahili">Kiswahili</option>
+      </select>
+    <br>
+
+    <label for="terms">
+      <input type="checkbox" name="terms" id="terms" required>
+      I agree to the terms and conditions of IAA Arusha University.
+    </label>
+    <br><br>
+
+    <button type="submit">Submit Registration</button>
+
+  </form>
+  <p>Go <a href="index.html">back / sign in to your account</a></p>
+</body>
+</html>
