@@ -1,13 +1,21 @@
+// Enable dropdown functionality
+var dropdownToggle = document.querySelector('.dropdown-toggle');
+var dropdownMenu = document.querySelector('.dropdown-menu');
 
-window.onscroll = function() {myFunction()};
+dropdownToggle.addEventListener('click', function() {
+    dropdownMenu.classList.toggle('show');
+});
 
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
+// Close dropdown when clicking outside of it
+window.addEventListener('click', function(event) {
+    if (!dropdownToggle.contains(event.target)) {
+        dropdownMenu.classList.remove('show');
+    }
+});
 
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
+const toggleNav = document.getElementById('toggleNav');
+const mainNav = document.getElementById('mainNav');
+
+toggleNav.addEventListener('click', () => {
+  mainNav.classList.toggle('active');
+});

@@ -1,31 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/styles.css" />
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 <body>
 
-<div class="header">
-  <h2>IAA </h2>
-  <p>Welcome to Institute of Accountancy Arusha</p>
-</div>
-
-    <div id="navbar">
-      <a class="active" href="home.html">Home</a>
-      <a href="register.html">register</a>
-      <a href="login.html">Login</a>
-    </div>
-
-    <div class="content">
-      <h3>Sticky Navigation Example</h3>
-
-      <p>Here is some new content I added.</p>
-      
+    <nav id="sidebar" class="side-nav">
+        <ul>
+            <li><a href="#"><i class="bi bi-house-door"></i> Dashboard</a></li>
+            <li><a href="#"><i class="bi bi-person-circle"></i> My Profile</a></li>
+            <li><a href="#"><i class="bi bi-image"></i> Edit Photo</a></li>
+            <li><a href="#"><i class="bi bi-credit-card"></i> Payments</a></li>
+            <li><a href="#"><i class="bi bi-card-text"></i> Examination</a></li>
+            <li><a href="#"><i class="bi bi-file-earmark-medical"></i> Result</a></li>
+            <li><a href="#"><i class="bi bi-key"></i> Change Password</a></li>
+            <li><a href="#"><i class="bi bi-box-arrow-right"></i> Logout</a></li>
+        </ul>
+    </nav>
 
 
+    <header class="sticky-header sticky-top bg-white">
+      <div class="container">
+        <nav class="navbar navbar-light bg-white">
+       
+          <div class="d-flex justify-content-start">
+           <center><span class="navbar-brand mb-0 h2">ISMS</span></center> 
+          </div>
+        </nav>
+      </div>
+    </header>
 
+    <main>
+        <h2>Welcome to ISMS</h2>
+    </main>
 
     <script src="js/script.js"></script>
 </body>
