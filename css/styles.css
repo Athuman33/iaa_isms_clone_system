@@ -1,112 +1,49 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
+  /* Add custom styles for the header */
+  .sticky-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+.navbar-brand {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
 }
 
-.faded-bg {
-  background-color: rgba(198, 8, 8, 0.8);
+/* Add custom styles for the collapsible side panel menu */
+.side-panel {
+    background-color: #011e3c; /* Blue background color */
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px; /* Initially hidden */
+    height: 100%;
+    padding-top: 60px; /* Same as header height */
+    transition: left 0.3s; /* Smooth transition */
 }
-
-.sticky-header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background-color: #fff;
-  border-bottom: 1px solid #ccc;
-  padding: 10px 0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.side-panel a {
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
 }
-
-.side-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 200px;
-  height: 100%;
-  background-color: #003e67;
-  padding-top: 20px;
-  z-index: 1000;
-  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
+.side-panel a:hover {
+    background-color: #0d76e6; /* Darker blue on hover */
 }
-
-.side-nav .user-image {
-  background-color: #fff;
-  width: 100%;
-  height: 100px;
-  margin-bottom: 20px;
-  border-radius: 50%;
-  border: 2px solid #005792;
-}
-
-.side-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.side-nav ul li {
-  padding: 10px;
-}
-
-.side-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  display: block;
-  transition: all 0.3s ease;
-}
-
-.side-nav ul li a:hover {
-  background-color: #2980b9;
-}
-
-
-#mainNav {
-  display: none;
-}
-
-#mainNav.active {
-  display: block; 
-}
-
-main {
-  margin-left: 220px;
-  padding: 20px;
-}
-
-.bi {
-  vertical-align: middle;
-  margin-right: 5px;
-}
-
-
-/* Add custom styles for the dropdown button */
-.dropdown-toggle {
-  color: #333; /* Text color */
-  background-color: #fff; /* Background color */
-  border: 1px solid #ccc; /* Border color */
-  border-radius: 5px; /* Border radius */
-  padding: 5px 10px; /* Padding */
-  cursor: pointer; /* Cursor style */
-}
-
-/* Style the dropdown menu */
-.dropdown-menu {
-  background-color: #fff; /* Background color */
-  border: 1px solid #ccc; /* Border color */
-  border-radius: 5px; /* Border radius */
-  padding: 5px 0; /* Padding */
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); /* Box shadow */
-}
-
-/* Style the dropdown menu items */
-.dropdown-menu .dropdown-item {
-  color: #333; /* Text color */
-  padding: 8px 20px; /* Padding */
-  text-decoration: none; /* Remove underline */
-  display: block; /* Display as block element */
-  transition: background-color 0.3s ease; /* Transition effect */
-}
-
-/* Hover effect for dropdown menu items */
-.dropdown-menu .dropdown-item:hover {
-  background-color: #f0f0f0; /* Hover background color */
+.menu-toggle {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
 }
