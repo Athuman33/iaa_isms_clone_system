@@ -1,61 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Examination</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
     <!-- Bootstrap Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <style>
-      
-    </style>
-</head>
-<body>
-
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <style></style>
+  </head>
+  <body>
     <header class="sticky-header">
-        <span class="navbar-brand">ISMS</span>
-        <!-- Menu toggle button -->
-        <div class="menu-toggle" onclick="toggleMenu()">
-            <i class="bi bi-list"></i>
-        </div>
-        <!-- Logout button -->
-<!-- Logout button -->
+      <span class="navbar-brand">ISMS</span>
+      <!-- Menu toggle button -->
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <i class="bi bi-list"></i>
+      </div>
+      <!-- Logout button -->
+      <!-- Logout button -->
     </header>
-    
 
     <div class="side-panel" id="sidePanel">
-    
-        <a href="home.html"><i class="bi bi-house-door"></i> Dashboard</a>
-        <a href="profile.html"><i class="bi bi-person-circle"></i> My Profile</a>
-        <a href="#"><i class="bi bi-image"></i> Edit Photo</a>
-        <a href="Payments.html"><i class="bi bi-credit-card"></i> Payments</a>
-        <a href="Examination.html"><i class="bi bi-card-text"></i> Examination</a>
-        <a href="Result.html"><i class="bi bi-file-earmark-medical"></i> Result</a>
-        <a href="Change Password.html"><i class="bi bi-key"></i> Change Password</a>
-        <a href="#"><i class="bi bi-box-arrow-right"></i> Logout</a>
-      
-  
+      <a href="home.html"><i class="bi bi-house-door"></i> Dashboard</a>
+      <a href="profile.html"><i class="bi bi-person-circle"></i> My Profile</a>
+      <a href="Payments.html"><i class="bi bi-credit-card"></i> Payments</a>
+      <a href="Examination.html"><i class="bi bi-card-text"></i> Examination</a>
+      <a href="Result.html"
+        ><i class="bi bi-file-earmark-medical"></i> Result</a
+      >
+      <a href="Change Password.html"
+        ><i class="bi bi-key"></i> Change Password</a
+      >
+      <a href="#"><i class="bi bi-box-arrow-right"></i> Logout</a>
     </div>
-<br><br>
+    <br /><br />
     <main>
-      <h1>
-        Examination Panel
-      </h1>
-      <p></p>
-        <!-- Your main content goes here -->
+      <h1>Examination Panel</h1>
+      <p>
+
+        This is the examination panel where you can see  the examination for the
+        course you have enrolled in.
+      </p>
+      <!-- Your main content goes here -->
     </main>
 
     <script>
-        function toggleMenu() {
-            var sidePanel = document.getElementById("sidePanel");
-            if (sidePanel.style.left === "0px") {
-                sidePanel.style.left = "-250px"; // Slide out the menu
-            } else {
-                sidePanel.style.left = "0px"; // Slide in the menu
-            }
+      function toggleMenu() {
+        var sidePanel = document.getElementById("sidePanel");
+        if (sidePanel.style.left === "0px") {
+          sidePanel.style.left = "-250px"; // Slide out the menu
+        } else {
+          sidePanel.style.left = "0px"; // Slide in the menu
         }
+      }
     </script>
-</body>
+  </body>
 </html>
