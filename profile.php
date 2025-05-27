@@ -30,11 +30,11 @@ include 'includes/sidebar.php';
                     <div class="profile-details">
                         <div class="info-group">
                             <label>Full Name:</label>
-                            <span>Joshua Noah Lucas</span>
+                            <span>Joshua Lucas</span>
                         </div>
                         <div class="info-group">
                             <label>Student ID:</label>
-                            <span>STU2024001</span>
+                            <span>BCS-01-0126-2023</span>
                         </div>
                         <div class="info-group">
                             <label>Email:</label>

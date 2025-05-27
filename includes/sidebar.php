@@ -14,7 +14,7 @@ $current_page = basename($_SERVER['PHP_SELF'], '.php');
     <div class="user-section">
         <p class="welcome-text">Welcome,</p>
         <button aria-expanded="false" aria-haspopup="true" class="user-dropdown">
-            Joshua Noah Lucas
+            Joshua Lucas
             <span class="icon icon-caret-down"></span>
         </button>
     </div>

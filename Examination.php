@@ -32,11 +32,11 @@ include 'includes/sidebar.php';
                   <div class="student-details">
                       <div class="detail-row">
                           <span class="label">Student Name:</span>
-                          <span class="value">Joshua Noah Lucas</span>
+                          <span class="value">Joshua Lucas</span>
                       </div>
                       <div class="detail-row">
                           <span class="label">Student ID:</span>
-                          <span class="value">STU2024001</span>
+                          <span class="value">BCS-01-0126-2023</span>
                       </div>
                       <div class="detail-row">
                           <span class="label">Program:</span>
